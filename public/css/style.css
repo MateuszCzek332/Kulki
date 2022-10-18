@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+}
+
+.field {
+    width: 46px;
+    height: 46px;
+    border: 1px solid black;
+    float: left;
+}
+
+.field:nth-child(9n+1) {
+    clear: both;
+}
+
+.ball {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 6px;
+    border: 1px solid black;
+    float: left;
+}
+
+.balllsQ {
+    float: right;
+}
