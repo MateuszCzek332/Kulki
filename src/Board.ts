@@ -2,6 +2,8 @@ import { Field } from "./Field";
 import { Ball } from "./Ball";
 
 export class Board {
+    public queue: Field[] = []
+    public visited: Field[] = []
     static firstField: Field = null;
     static lastField: Field = null;
     public width: number;
@@ -28,7 +30,7 @@ export class Board {
         for (let i: number = 0; i < this.height; i++) {
             this.fields[i] = [];
             for (let j = 0; j < this.width; j++) {
-                let f: Field = new Field(i, j);
+                let f: Field = new Field(i, j, () => { this.findPath() });
                 this.fields[i][j] = f;
                 this.html.appendChild(f.html);
             }
@@ -64,4 +66,57 @@ export class Board {
         this.ballsToQ();
     }
 
+    findPath = () => {
+        if (Board.firstField != null) {
+            this.queue = [Board.firstField,]
+            //this.visited = []
+            // let x = this.queue[0].x
+            // let y = this.queue[0].y
+            // while
+            // if (this.queue[0] == Board.lastField) {
+            //     Board.lastField.html.style.backgroundColor = "blue"
+            //     Board.lastField.html.innerText = "M";
+            //     break
+            // }
+            while (this.queue.length > 0) {
+                if (Board.lastField == this.queue[0]) {
+                    this.queue[0].html.style.backgroundColor = "blue"
+                    this.queue[0].html.innerText = "M"
+                    break;
+                }
+                this.queue[0].visited = true
+                this.queue[0].html.style.backgroundColor = "red"
+                this.queue[0].html.innerText = this.queue[0].val.toString()
+                this.dodajSasiadow(this.queue[0].val + 1)
+                this.queue.shift()
+            }
+
+
+        }
+
+
+
+    }
+
+    dodajSasiadow = (i: number) => {
+        let x = this.queue[0].x
+        let y = this.queue[0].y
+
+        if (x + 1 < this.width && !this.fields[x + 1][y].visited && this.fields[x + 1][y].ball == null) {
+            this.fields[x + 1][y].val = i
+            this.queue.push(this.fields[x + 1][y])
+        }
+        if (x - 1 >= 0 && !this.fields[x - 1][y].visited && this.fields[x - 1][y].ball == null) {
+            this.fields[x - 1][y].val = i
+            this.queue.push(this.fields[x - 1][y])
+        }
+        if (y + 1 < this.height && !this.fields[x][y + 1].visited && this.fields[x][y + 1].ball == null) {
+            this.fields[x][y + 1].val = i
+            this.queue.push(this.fields[x][y + 1])
+        }
+        if (y - 1 >= 0 && !this.fields[x][y - 1].visited && this.fields[x][y - 1].ball == null) {
+            this.fields[x][y - 1].val = i
+            this.queue.push(this.fields[x][y - 1])
+        }
+    }
 }
