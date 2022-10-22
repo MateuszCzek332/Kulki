@@ -21,20 +21,20 @@ export class Field {
 
     }
 
-    spawnBall = (b: Ball) => {
+    public spawnBall = (b: Ball) => {
         this.html.appendChild(b.html);
         this.ball = b;
 
     }
 
-    onClick = () => {
+    private onClick = () => {
 
-        if (this.ball == null) {
+        if (this.ball == null && Board.move) {
             Board.lastField = this;
             //console.log(Board.lastField)
             this.pf()
         }
-        if (this.ball != null) {
+        else if (this.ball != null) {
             switch (Board.firstField) {
                 case null:
                     this.ball.select();

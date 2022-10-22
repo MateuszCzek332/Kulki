@@ -2,8 +2,9 @@ import { Field } from "./Field";
 import { Ball } from "./Ball";
 
 export class Board {
+    static move: boolean = true;
     public queue: Field[] = []
-    public visited: Field[] = []
+    public path: Field[] = []
     static firstField: Field = null;
     static lastField: Field = null;
     public width: number;
@@ -69,33 +70,53 @@ export class Board {
     findPath = () => {
         if (Board.firstField != null) {
             this.queue = [Board.firstField,]
-            //this.visited = []
-            // let x = this.queue[0].x
-            // let y = this.queue[0].y
-            // while
-            // if (this.queue[0] == Board.lastField) {
-            //     Board.lastField.html.style.backgroundColor = "blue"
-            //     Board.lastField.html.innerText = "M";
-            //     break
-            // }
+            this.queue[0].val = 1
             while (this.queue.length > 0) {
                 if (Board.lastField == this.queue[0]) {
                     this.queue[0].html.style.backgroundColor = "blue"
-                    this.queue[0].html.innerText = "M"
+                    // this.queue[0].html.innerText = "M"
+                    this.goBack()
                     break;
                 }
                 this.queue[0].visited = true
-                this.queue[0].html.style.backgroundColor = "red"
-                this.queue[0].html.innerText = this.queue[0].val.toString()
+                // this.queue[0].html.style.backgroundColor = "red"
+                // this.queue[0].html.innerText = this.queue[0].val.toString()
                 this.dodajSasiadow(this.queue[0].val + 1)
                 this.queue.shift()
             }
-
-
         }
+    }
 
+    goBack = () => {
+        this.path = []
+        let min = Board.lastField
+        min.val = 20;
+        do {
+            let newmin = new Field(0, 0, 0)
+            if (min.x + 1 < this.width && this.fields[min.x + 1][min.y].val > 0 && this.fields[min.x + 1][min.y].val < min.val) {
+                newmin = this.fields[min.x + 1][min.y]
+            }
+            if (min.x - 1 >= 0 && this.fields[min.x - 1][min.y].val > 0 && this.fields[min.x - 1][min.y].val < min.val) {
+                newmin = this.fields[min.x - 1][min.y]
+            }
+            if (min.y + 1 < this.height && this.fields[min.x][min.y + 1].val > 0 && this.fields[min.x][min.y + 1].val < min.val) {
+                newmin = this.fields[min.x][min.y + 1]
+            }
+            if (min.y - 1 >= 0 && this.fields[min.x][min.y - 1].val > 0 && this.fields[min.x][min.y - 1].val < min.val) {
+                newmin = this.fields[min.x][min.y - 1]
+            }
 
+            this.path.push(newmin)
+            // newmin.html.style.backgroundColor = "green"
 
+            if (newmin.val == 0 || newmin.val == 1)
+                break
+
+            min = newmin;
+        }
+        while (true)
+        this.selectPath()
+        this.moveball()
     }
 
     dodajSasiadow = (i: number) => {
@@ -118,5 +139,39 @@ export class Board {
             this.fields[x][y - 1].val = i
             this.queue.push(this.fields[x][y - 1])
         }
+    }
+
+    moveball = () => {
+        Board.move = false;
+        console.log(Board.firstField.ball)
+        console.log(Board.lastField)
+        Board.lastField.spawnBall(Board.firstField.ball)
+        Board.lastField.ball.unSelect()
+        Board.firstField.ball = null
+        Board.firstField = null
+        // Board.lastField.ball.unSelect()
+        // Board.firstField.ball = null
+        setTimeout(() => { this.unselectPath() }, 1000)
+    }
+
+    selectPath = () => {
+        this.path.forEach((el) => {
+            el.html.style.backgroundColor = 'green'
+        })
+    }
+
+    unselectPath = () => {
+        this.path.forEach((el) => {
+            el.html.style.backgroundColor = 'white'
+        })
+        Board.lastField.html.style.backgroundColor = 'white'
+        Board.lastField = null;
+        for (let i = 0; i < this.width; i++)
+            for (let j = 0; j < this.height; j++) {
+                this.fields[i][j].val = 0;
+                this.fields[i][j].visited = false;
+            }
+        Board.move = true;
+        this.spawnBalls()
     }
 }
