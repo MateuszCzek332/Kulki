@@ -1,0 +1,12 @@
+{
+    "name": "Projekt gry kulki",
+    // Comments are supported, like tsconfig.json
+    "entryPoints": [
+        "src/app.ts",
+        "src/Board.ts",
+        "src/Field.ts",
+        "src/Ball.ts",
+        "src/hasHtml.ts"
+    ],
+    "out": "docs"
+}
