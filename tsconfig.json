@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
@@ -12,7 +13,8 @@
       "src/Board.ts",
       "src/Field.ts",
       "src/Ball.ts",
-      "src/hasHtml.ts"
+      "src/hasHtml.ts",
+      "src/chat.ts"
     ],
     "out": "docs"
   }

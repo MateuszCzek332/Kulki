@@ -25,7 +25,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../interfaces/hasHtml.hasHtml.html" class="tsd-signature-type" data-tsd-kind="Interface">hasHtml</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L5">Board.ts:5</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L6">Board.ts:6</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -38,6 +38,7 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="Board.Board.html#ballsDiv" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>balls<wbr/>Div</span></a>
+<a href="Board.Board.html#chatDiv" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>chat<wbr/>Div</span></a>
 <a href="Board.Board.html#fields" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>fields</span></a>
 <a href="Board.Board.html#height" class="tsd-index-link tsd-kind-property tsd-parent-kind-class tsd-is-private"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>height</span></a>
 <a href="Board.Board.html#html" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>html</span></a>
@@ -56,6 +57,7 @@
 <a href="Board.Board.html#checkBall" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>check<wbr/>Ball</span></a>
 <a href="Board.Board.html#createBallsQ" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>BallsQ</span></a>
 <a href="Board.Board.html#createBoard" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Board</span></a>
+<a href="Board.Board.html#createChat" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Chat</span></a>
 <a href="Board.Board.html#findPath" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>find<wbr/>Path</span></a>
 <a href="Board.Board.html#goBack" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>go<wbr/>Back</span></a>
 <a href="Board.Board.html#init" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>init</span></a>
@@ -75,65 +77,70 @@
 </div>
 <h4 class="tsd-returns-title">Returns <a href="Board.Board.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L20">Board.ts:20</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L22">Board.ts:22</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="ballsDiv" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>balls<wbr/>Div</span><a href="#ballsDiv" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">balls<wbr/>Div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L16">Board.ts:16</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L17">Board.ts:17</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="chatDiv" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>chat<wbr/>Div</span><a href="#chatDiv" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">chat<wbr/>Div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L18">Board.ts:18</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="fields" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>fields</span><a href="#fields" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">fields<span class="tsd-signature-symbol">:</span> <a href="Field.Field.html" class="tsd-signature-type" data-tsd-kind="Class">Field</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L11">Board.ts:11</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L12">Board.ts:12</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="height" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>height</span><a href="#height" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L10">Board.ts:10</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L11">Board.ts:11</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="html" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>html</span><a href="#html" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div><aside class="tsd-sources">
 <p>Implementation of <a href="../interfaces/hasHtml.hasHtml.html">hasHtml</a>.<a href="../interfaces/hasHtml.hasHtml.html#html">html</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L15">Board.ts:15</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L16">Board.ts:16</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="path" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>path</span><a href="#path" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">path<span class="tsd-signature-symbol">:</span> <a href="Field.Field.html" class="tsd-signature-type" data-tsd-kind="Class">Field</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L13">Board.ts:13</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L14">Board.ts:14</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="qBalls" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>q<wbr/>Balls</span><a href="#qBalls" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">q<wbr/>Balls<span class="tsd-signature-symbol">:</span> <a href="Ball.Ball.html" class="tsd-signature-type" data-tsd-kind="Class">Ball</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L14">Board.ts:14</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L15">Board.ts:15</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="queue" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <span>queue</span><a href="#queue" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">queue<span class="tsd-signature-symbol">:</span> <a href="Field.Field.html" class="tsd-signature-type" data-tsd-kind="Class">Field</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L12">Board.ts:12</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L13">Board.ts:13</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private"><a id="width" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagPrivate">Private</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>width</span><a href="#width" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L9">Board.ts:9</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L10">Board.ts:10</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="firstField" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>first<wbr/>Field</span><a href="#firstField" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">first<wbr/>Field<span class="tsd-signature-symbol">:</span> <a href="Field.Field.html" class="tsd-signature-type" data-tsd-kind="Class">Field</a><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L7">Board.ts:7</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L8">Board.ts:8</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="lastField" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>last<wbr/>Field</span><a href="#lastField" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">last<wbr/>Field<span class="tsd-signature-symbol">:</span> <a href="Field.Field.html" class="tsd-signature-type" data-tsd-kind="Class">Field</a><span class="tsd-signature-symbol"> = null</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L8">Board.ts:8</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L9">Board.ts:9</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="move" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>move</span><a href="#move" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L6">Board.ts:6</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L7">Board.ts:7</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="addNeighbors" class="tsd-anchor"></a>
@@ -152,7 +159,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L165">Board.ts:165</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L176">Board.ts:176</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="ballsToQ" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>balls<wbr/>ToQ</span><a href="#ballsToQ" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -162,7 +169,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L63">Board.ts:63</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L74">Board.ts:74</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="checkBall" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>check<wbr/>Ball</span><a href="#checkBall" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -185,7 +192,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L95">Board.ts:95</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L106">Board.ts:106</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="createBallsQ" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>BallsQ</span><a href="#createBallsQ" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -195,7 +202,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L52">Board.ts:52</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L55">Board.ts:55</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="createBoard" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>create<wbr/>Board</span><a href="#createBoard" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -205,7 +212,17 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L35">Board.ts:35</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L38">Board.ts:38</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="createChat" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Chat</span><a href="#createChat" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="createChat.createChat-1">create<wbr/>Chat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#createChat.createChat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>tworzenie czatu</p>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L65">Board.ts:65</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="findPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>find<wbr/>Path</span><a href="#findPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -216,7 +233,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L113">Board.ts:113</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L124">Board.ts:124</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="goBack" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>go<wbr/>Back</span><a href="#goBack" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -226,7 +243,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L132">Board.ts:132</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L143">Board.ts:143</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="init" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>init</span><a href="#init" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -236,7 +253,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L28">Board.ts:28</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L30">Board.ts:30</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="moveball" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>moveball</span><a href="#moveball" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -246,7 +263,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L189">Board.ts:189</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L200">Board.ts:200</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="selectPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>select<wbr/>Path</span><a href="#selectPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -256,7 +273,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L207">Board.ts:207</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L219">Board.ts:219</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="spawnBalls" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>spawn<wbr/>Balls</span><a href="#spawnBalls" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -266,7 +283,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L75">Board.ts:75</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L86">Board.ts:86</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="unselectPath" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unselect<wbr/>Path</span><a href="#unselectPath" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -276,7 +293,7 @@ Po czym wywoluje funkcje goBack</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/2f14a16/src/Board.ts#L215">Board.ts:215</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/MateuszCzek332/Kulki/blob/d2c4721/src/Board.ts#L227">Board.ts:227</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -302,6 +319,7 @@ Po czym wywoluje funkcje goBack</p>
 <li class="current selected tsd-kind-module"><a href="../modules/Board.html">Board</a></li>
 <li class="tsd-kind-module"><a href="../modules/Field.html">Field</a></li>
 <li class="tsd-kind-module"><a href="../modules/app.html">app</a></li>
+<li class="tsd-kind-module"><a href="../modules/chat.html">chat</a></li>
 <li class="tsd-kind-module"><a href="../modules/hasHtml.html">has<wbr/>Html</a></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
 <ul>
@@ -309,6 +327,7 @@ Po czym wywoluje funkcje goBack</p>
 <ul>
 <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Board.Board.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg>constructor</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Board.Board.html#ballsDiv" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>balls<wbr/>Div</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Board.Board.html#chatDiv" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>chat<wbr/>Div</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Board.Board.html#fields" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>fields</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="Board.Board.html#height" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>height</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="Board.Board.html#html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>html</a></li>
@@ -324,6 +343,7 @@ Po czym wywoluje funkcje goBack</p>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#checkBall" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>check<wbr/>Ball</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#createBallsQ" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>create<wbr/>BallsQ</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#createBoard" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>create<wbr/>Board</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#createChat" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>create<wbr/>Chat</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#findPath" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>find<wbr/>Path</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#goBack" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>go<wbr/>Back</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="Board.Board.html#init" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>init</a></li>

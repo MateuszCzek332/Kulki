@@ -2,6 +2,14 @@ h1 {
     color: red;
 }
 
+.chat {
+    margin-top: 0px;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
 .field {
     width: 46px;
     height: 46px;

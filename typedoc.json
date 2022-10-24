@@ -6,7 +6,8 @@
         "src/Board.ts",
         "src/Field.ts",
         "src/Ball.ts",
-        "src/hasHtml.ts"
+        "src/hasHtml.ts",
+        "src/chat.ts"
     ],
     "out": "docs"
 }

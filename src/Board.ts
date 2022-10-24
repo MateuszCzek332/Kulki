@@ -1,6 +1,7 @@
 import { Field } from "./Field";
 import { Ball } from "./Ball";
 import { hasHtml } from "./hasHtml";
+import { chat } from "./chat";
 
 export class Board implements hasHtml {
     static move: boolean = true;
@@ -14,6 +15,7 @@ export class Board implements hasHtml {
     private qBalls: Ball[] = [];
     public html: HTMLDivElement;
     private ballsDiv: HTMLDivElement;
+    private chatDiv: HTMLDivElement;
     /**
      * inicjowanie wartoci wysokosci i szerokosci, wywolanie funki init - tworzenie elementow na stronie
      */
@@ -28,6 +30,7 @@ export class Board implements hasHtml {
     init = () => {
         this.createBoard();
         this.createBallsQ();
+        this.createChat();
     }
     /**
      * Tworzenie tablicy 9x9, dodawanie jej do tablicy i html'a
@@ -50,11 +53,19 @@ export class Board implements hasHtml {
      * Tworzenie kolejki nastepnych kulek, pierwszy sppanw kulek na planszy
      */
     createBallsQ = () => {
-
         this.ballsDiv = document.createElement("div");
         document.body.appendChild(this.ballsDiv);
         this.ballsToQ();
         this.spawnBalls();
+    }
+
+    /**
+     * tworzenie czatu
+     */
+    createChat = () => {
+        this.chatDiv = document.createElement("div");
+        this.chatDiv.className = "chat"
+        document.body.appendChild(this.chatDiv);
     }
 
     /**
@@ -186,7 +197,8 @@ export class Board implements hasHtml {
     /**
      * rusza kulka z pola poczatkowego do koncowegpo(o ile sciezka zostala znaleziona - dlugosc sciezki wieksza od 0) 
      */
-    moveball = () => {
+    @chat
+    moveball() {
         Board.move = false;
         if (this.path.length > 0) {
 
@@ -228,3 +240,4 @@ export class Board implements hasHtml {
         }
     }
 }
+
